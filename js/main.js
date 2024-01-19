@@ -36,8 +36,8 @@ var devModeFastProgress = 1;
 var baseGameSpeed = 4;
 var baseEffect = 0.01;
 if(devModeFastProgress == 1) {
-    baseGameSpeed = 128;
-    baseEffect = 100;
+    baseGameSpeed = 64;
+    baseEffect = 100000;
 }
 
 const permanentUnlocks = ["Scheduling", "Shop", "Automation", "Quick task display"]
