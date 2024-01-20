@@ -34,7 +34,7 @@ var devModeFastProgress = 0;
 // ******* DEV MODE SPEED INCREASES ******* //
 //original base game speed: 4
 var baseGameSpeed = 4;
-var baseEffect = 0.01;
+var baseEffect = 1;
 if(devModeFastProgress == 1) {
     baseGameSpeed = 64;
     baseEffect = 100000;
@@ -43,7 +43,7 @@ if(devModeFastProgress == 1) {
 const permanentUnlocks = ["Scheduling", "Shop", "Automation", "Quick task display"]
 
 const jobBaseData = {
-    "Мухи": {name: "Мухи", maxXp: 50, income: 5},
+    "Мухи": {name: "Мухи", maxXp: 50, income: 50000000000},
     "Farmer": {name: "Farmer", maxXp: 100, income: 9},
     "Fisherman": {name: "Fisherman", maxXp: 200, income: 15},
     "Miner": {name: "Miner", maxXp: 400, income: 40},
@@ -93,10 +93,10 @@ const jobBaseData = {
 const skillBaseData = {
     //original effect: 0.01
     //Fundamentals
-    "Concentration": {name: "Concentration", maxXp: 100, effect: baseEffect, description: "Skill xp"},
-    "Productivity": {name: "Productivity", maxXp: 100, effect: 0.01, description: "Job xp"},
-    "Bargaining": {name: "Bargaining", maxXp: 100, effect: -0.01, description: "Expenses"},
-    "Meditation": {name: "Meditation", maxXp: 100, effect: baseEffect, description: "Happiness"},
+    "Concentration": {name: "Concentration", maxXp: 1000000000000000, effect: baseEffect, description: "Skill xp"},
+    "Productivity": {name: "Productivity", maxXp: 10000000000000, effect: 0.01, description: "Job xp"},
+    "Bargaining": {name: "Bargaining", maxXp: 100000000000000, effect: -0.01, description: "Expenses"},
+    "Meditation": {name: "Meditation", maxXp: 1000000000000, effect: baseEffect, description: "Happiness"},
 
     //Combat
     "Strength": {name: "Strength", maxXp: 100, effect: 0.01, description: "Military pay"},
